@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">Student2Student</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_user">משתמש חדש</string>
+    <string name="exsist_user">משתמש קיים</string>
+    <string name="new_name"> שם פרטי </string>
+    <string name="new_last_name"> שם משפחה </string>
+    <string name="user_ID"> תעודת זהות </string>
+    <string name="e_mail"> אימייל </string>
+    <string name="courses"> קורסים </string>
+    <string name="teach">  האם את\ה רוצה להיות מורה </string>
+    <string name="policy"> תקנון </string>
+    <string name="title_activity_new_user_activity">new_user_activity</string>
+    <string name="collage"> מכללה </string>
+    <string name="user_name"> שם משתמש </string>
+    <string name="chose_courses"> בחר קורסים שתצליח ללמד  </string>
+
+    <string-array name="occupation_list">
+        <item> הנדסת תוכנה </item>
+        <item> הנדסה פרמצבטית </item>
+        <item> הנדסת חומרים מתקדמים </item>
+        <item> הנדסת טכנולוגיות סביבתיות </item>
+        <item> הנדסת מכונות </item>
+        <item> הנדסת תעשייה וניהול </item>
+        <item> הנדסת חשמל ואלקטרוניקה </item>
+        <item> הנדסה אזרחית וסביבתית </item>
+        <item> מכינות קדם אקדמיות </item>
+    </string-array>
+
+
+    <string name="title_activity_exist_student">exist_student</string>
+    <string name="title_activity_policy">policy</string>
+    <string name="title_activity_courses_page">courses_page</string>
+
+</resources>

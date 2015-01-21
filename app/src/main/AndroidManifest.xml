@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exempel.student2student.student2student" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".new_user_activity"
+            android:label="@string/title_activity_new_user_activity" >
+        </activity>
+        <activity
+            android:name=".exist_student"
+            android:label="@string/title_activity_exist_student" >
+        </activity>
+        <activity
+            android:name=".policy"
+            android:label="@string/title_activity_policy" >
+        </activity>
+        <activity
+            android:name=".courses_page"
+            android:label="@string/title_activity_courses_page" >
+        </activity>
+    </application>
+
+</manifest>
