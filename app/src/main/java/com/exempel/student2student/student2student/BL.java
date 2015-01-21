@@ -9,7 +9,7 @@ import android.database.Cursor;
 public class BL
 {
     DBDal dal;
-//test for commit
+
     public BL(Context con)
     {
         dal = new DBDal(con);
