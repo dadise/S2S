@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res" >
+            <file
+                name="logo"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\drawable\logo.jpeg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="activity_my"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\activity_my.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="my"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\menu\my.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values\colors.xml.xml"
+                qualifiers="" >
+                <color name="darkGray" >#A9A9A9
+                </color>
+                <color name="red" >#CC0000
+                </color>
+                <color name="Maroon" >#800000
+                </color>
+                <color name="black" >#000000
+                </color>
+                <color name="white" >#FFFFFF
+                </color>
+            </file>
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="user_ID" > תעודת זהות 
+                </string>
+                <string name="user_name" > שם משתמש 
+                </string>
+                <string name="title_activity_new_user_activity" >new_user_activity
+                </string>
+
+                <string-array name="occupation_list" >
+                    <item>
+ הנדסת תוכנה 
+                    </item>
+                    <item>
+ הנדסה פרמצבטית 
+                    </item>
+                    <item>
+ הנדסת חומרים מתקדמים 
+                    </item>
+                    <item>
+ הנדסת טכנולוגיות סביבתיות 
+                    </item>
+                    <item>
+ הנדסת מכונות 
+                    </item>
+                    <item>
+ הנדסת תעשייה וניהול 
+                    </item>
+                    <item>
+ הנדסת חשמל ואלקטרוניקה 
+                    </item>
+                    <item>
+ הנדסה אזרחית וסביבתית 
+                    </item>
+                    <item>
+ מכינות קדם אקדמיות 
+                    </item>
+                </string-array>
+
+                <string name="exsist_user" >משתמש קיים
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >Student2Student
+                </string>
+                <string name="new_user" >משתמש חדש
+                </string>
+                <string name="title_activity_exist_student" >exist_student
+                </string>
+                <string name="chose_courses" > בחר קורסים שתצליח ללמד  
+                </string>
+                <string name="teach" >  האם את\ה רוצה להיות מורה 
+                </string>
+                <string name="title_activity_policy" >policy
+                </string>
+                <string name="courses" > קורסים 
+                </string>
+                <string name="e_mail" > אימייל 
+                </string>
+                <string name="new_name" > שם פרטי 
+                </string>
+                <string name="policy" > תקנון 
+                </string>
+                <string name="title_activity_courses_page" >courses_page
+                </string>
+                <string name="collage" > מכללה 
+                </string>
+                <string name="new_last_name" > שם משפחה 
+                </string>
+            </file>
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- Customize your theme here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values-v21\styles.xml"
+                qualifiers="v21" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Material.Light" >
+                </style>
+            </file>
+            <file
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\values-w820dp\dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+            <file
+                name="temp"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\temp.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_exist_student"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\activity_exist_student.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="policy"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\menu\policy.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="exist_student"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\menu\exist_student.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_policy"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\activity_policy.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="new_user_activity"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\menu\new_user_activity.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_new_user_activity"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\activity_new_user_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="courses_page"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\menu\courses_page.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_courses_page"
+                path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\main\res\layout\activity_courses_page.xml"
+                qualifiers=""
+                type="layout" />
+        </source>
+        <source path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\src\debug\res" />
+    </dataSet>
+
+</merger>
