@@ -11,11 +11,11 @@ import android.database.sqlite.SQLiteDatabase;
 public class DBDal
 {
         //when i want to read and display somthing from DB i need to use Curser
-    DBTable db;
+    studentsTable db;
 
     public DBDal(Context con)
     {
-        db = new DBTable(con);
+        db = new studentsTable(con);
     }
     public void writeToDB(String first,String last,int id,String mail,String occ)
     {
