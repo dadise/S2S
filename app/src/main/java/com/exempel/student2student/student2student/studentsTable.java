@@ -30,6 +30,7 @@ public class studentsTable extends SQLiteOpenHelper
         db.execSQL("CREATE TABLE "+DBColumns.COURSES_TABLE_NAME+ "(" +DBColumns._ID+ "  INTEGER AUTOINCREMENT,"
         +DBColumns.COURSE_NUMBER+" INTEGER,"
         +DBColumns.COURSE_NAME+" TEXT_TYPE,"
+        +DBColumns.COURSE_OCCUPATION+ " TEXT_TYPE,"
         +"PRIMARY KEY ("+DBColumns.COURSE_NUMBER+");" );
 
         db.execSQL("CREATE TABLE "+DBColumns.TEACHERS_TABLE_NAME+ "(" +DBColumns._ID+ " INTEGER AUTOINCREMENT,"
@@ -46,6 +47,7 @@ public class studentsTable extends SQLiteOpenHelper
         +DBColumns.COURSE_NUMBER+ " INTEGER,"
         +DBColumns.TEACHER_ID+ " INTEGER,"
         +DBColumns.SEEKER_ID+ " INTEGER,"
+        +DBColumns.STATUS+ " TEXT_TYPE,"
         +"PRIMARY KEY ("+DBColumns.COURSE_NUMBER+","+DBColumns.TEACHER_ID+","+DBColumns.SEEKER_ID+");" );
     }
 

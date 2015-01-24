@@ -32,6 +32,14 @@
             android:name=".courses_page"
             android:label="@string/title_activity_courses_page" >
         </activity>
+        <activity
+            android:name=".which_to_tech_activity"
+            android:label="@string/title_activity_which_to_tech_activity" >
+        </activity>
+        <activity
+            android:name=".which_to_learn_activity"
+            android:label="@string/title_activity_which_to_learn_activity" >
+        </activity>
     </application>
 
 </manifest>

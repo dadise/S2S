@@ -17,6 +17,7 @@ public class DBColumns implements BaseColumns
     public static final String COURSES_TABLE_NAME = "courses";
     public static final String COURSE_NUMBER = "courseNumber";
     public static final String COURSE_NAME = "courseName";
+    public static final String COURSE_OCCUPATION = "courseOccupation";
 
     public static final String TEACHERS_TABLE_NAME = "teachers";
     public static final String TEACHER_ID = "tid";
