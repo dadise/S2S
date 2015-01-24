@@ -151,13 +151,10 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/occupation_spinner"
+            android:id="@+id/line_of_business_spinner"
             android:layout_gravity="center_horizontal"
             android:layout_margin="12dp"
-            android:entries="@array/occupation_list"/>
-
-
-
+            android:entries="@array/line_of_business_list"/>
 
     </LinearLayout>
 

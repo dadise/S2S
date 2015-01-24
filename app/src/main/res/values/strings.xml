@@ -18,7 +18,7 @@
     <string name="user_name"> שם משתמש </string>
     <string name="chose_courses"> בחר קורסים שתצליח ללמד  </string>
 
-    <string-array name="occupation_list">
+    <string-array name="line_of_business_list">
         <item> הנדסת תוכנה </item>
         <item> הנדסה פרמצבטית </item>
         <item> הנדסת חומרים מתקדמים </item>

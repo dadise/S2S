@@ -25,7 +25,7 @@ public class studentsTable extends SQLiteOpenHelper
         + DBColumns.LAST_NAME+" TEXT_TYPE,"
         + DBColumns.ID+ " INTEGER,"
         + DBColumns.E_MAIL+" TEXT_TYPE,"
-        + DBColumns.OCCUPATION+ " TEXT_TYPE);" );
+        + DBColumns.LINE_OF_BUSINESS+ " TEXT_TYPE);" );
 
         db.execSQL("CREATE TABLE "+DBColumns.COURSES_TABLE_NAME+ "(" +DBColumns._ID+ "  INTEGER AUTOINCREMENT,"
         +DBColumns.COURSE_NUMBER+" INTEGER,"

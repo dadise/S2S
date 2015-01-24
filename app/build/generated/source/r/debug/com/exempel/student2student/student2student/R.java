@@ -9,7 +9,7 @@ package com.exempel.student2student.student2student;
 
 public final class R {
     public static final class array {
-        public static final int occupation_list=0x7f040000;
+        public static final int line_of_business_list=0x7f040000;
     }
     public static final class attr {
     }
@@ -38,6 +38,7 @@ public final class R {
         public static final int imageView=0x7f0a0008;
         public static final int lastEditText=0x7f0a0002;
         public static final int lastTextView=0x7f0a000a;
+        public static final int line_of_business_spinner=0x7f0a000f;
         public static final int mailEditText=0x7f0a000d;
         public static final int mailTextView=0x7f0a000e;
         public static final int nameEditText=0x7f0a0000;
@@ -46,7 +47,6 @@ public final class R {
         public static final int new_user=0x7f0a0006;
         public static final int new_user_cancel_Button=0x7f0a0012;
         public static final int new_user_ok_Button=0x7f0a0013;
-        public static final int occupation_spinner=0x7f0a000f;
         public static final int okExistUserButton=0x7f0a0005;
         public static final int policyButton=0x7f0a0011;
         public static final int teachBox=0x7f0a0010;

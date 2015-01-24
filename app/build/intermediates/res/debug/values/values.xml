@@ -4,7 +4,7 @@
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
-    <string-array name="occupation_list">
+    <string-array name="line_of_business_list">
         <item> הנדסת תוכנה </item>
         <item> הנדסה פרמצבטית </item>
         <item> הנדסת חומרים מתקדמים </item>

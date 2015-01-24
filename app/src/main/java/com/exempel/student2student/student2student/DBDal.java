@@ -17,7 +17,7 @@ public class DBDal
     {
         db = new studentsTable(con);
     }
-    public void writeToDB(String first,String last,int id,String mail,String occ)
+    public void writeToDB(String first,String last,int id,String mail,String lob)
     {
         SQLiteDatabase dbw = db.getWritableDatabase();
 
@@ -27,7 +27,7 @@ public class DBDal
         values.put(DBColumns.LAST_NAME,last);
         values.put(DBColumns.ID,id);
         values.put(DBColumns.E_MAIL,mail);
-        values.put(DBColumns.OCCUPATION,occ);
+        values.put(DBColumns.LINE_OF_BUSINESS,lob);
 
         dbw.insertOrThrow(DBColumns.STUDENTS_TABLE_NAME,null,values);
         dbw.close();

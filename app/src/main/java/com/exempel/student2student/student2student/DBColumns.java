@@ -12,7 +12,7 @@ public class DBColumns implements BaseColumns
     public static final String LAST_NAME = "last";
     public static final String E_MAIL = "mail";
     public static final String ID = "id";
-    public static final String OCCUPATION = "occupation";
+    public static final String LINE_OF_BUSINESS = "line of business";
 
     public static final String COURSES_TABLE_NAME = "courses";
     public static final String COURSE_NUMBER = "courseNumber";

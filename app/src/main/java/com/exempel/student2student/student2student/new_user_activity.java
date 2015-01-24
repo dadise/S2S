@@ -31,7 +31,7 @@ public class new_user_activity extends Activity {
         lastName = (EditText) findViewById(R.id.lastEditText);
         ID = (EditText) findViewById(R.id.IDEditText);
         e_mail = (EditText) findViewById(R.id.mailEditText);
-        occupation = (Spinner) findViewById(R.id.occupation_spinner);
+        occupation = (Spinner) findViewById(R.id.line_of_business_spinner);
         teach = (CheckBox) findViewById(R.id.teachBox);
         bl = new BL(this);
     }
