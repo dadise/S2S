@@ -37,14 +37,14 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="הכנס שם משתמש"
-                android:ems="7"
+                android:ems="8"
                 android:id="@+id/nameEditText" />
 
             <TextView
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
                 android:hint="הכנס תעודת זהות"
-                android:ems="7"
+                android:ems="8"
                 android:id="@+id/lastEditText" />
 
             <TextView

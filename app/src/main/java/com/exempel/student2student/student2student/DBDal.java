@@ -29,7 +29,7 @@ public class DBDal
         values.put(DBColumns.E_MAIL,mail);
         values.put(DBColumns.OCCUPATION,occ);
 
-        dbw.insertOrThrow(DBColumns.TABLE_NAME,null,values);
+        dbw.insertOrThrow(DBColumns.STUDENTS_TABLE_NAME,null,values);
         dbw.close();
     }
 
@@ -39,7 +39,7 @@ public class DBDal
 
         String str = "";
         String [] columns = {DBColumns.FIRST_NAME,DBColumns.LAST_NAME};
-        Cursor c = dbr.query(DBColumns.TABLE_NAME,columns,null,null,null,null,null,null);
+        Cursor c = dbr.query(DBColumns.STUDENTS_TABLE_NAME,columns,null,null,null,null,null,null);
         while(c.moveToNext())
         {
             str += c.getString(1) + " "+ c.getString(2);
