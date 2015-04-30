@@ -12,30 +12,21 @@
     android:weightSum="1"
     android:background="@color/white">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="120dp">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text=" אנא בחר\י את המקצועות אותם תרצה\י ללמוד "
-            android:gravity="center"
+            android:text=" אנא בחר את המקצוע אותו תרצה ללמוד "
             android:textStyle="bold"
             android:textSize="17dp"
+            android:textAlignment="center"
             android:textColor="@color/Maroon"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
-
-
-    </LinearLayout>
+           </ListView>
 
 </LinearLayout>

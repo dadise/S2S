@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text=" אנא בחר\י את התחום אותו תוכל ללמד "
+            android:text="@string/chose_courses"
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="20dp"
@@ -30,12 +30,38 @@
     </LinearLayout>
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="320dp">
 
 
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teachListView"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
 
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:background="@color/red"
+            android:text="@string/cont"
+            android:textColor="@color/white"
+            android:onClick="toLearnActivity"
+            android:clickable="true"/>
 
-     </LinearLayout>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/red"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:onClick="toNewUserActivity"/>
+    </LinearLayout>
 
 </LinearLayout>

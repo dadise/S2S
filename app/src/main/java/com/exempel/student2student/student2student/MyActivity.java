@@ -2,7 +2,9 @@ package com.exempel.student2student.student2student;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,14 +12,32 @@ import android.view.View;
 
 public class MyActivity extends Activity {
 
+    private SharedPreferences sp;
+    private Boolean DBCreated;
+    private BL bl;
+
+//    DBColumns db;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
+        sp = getPreferences(MODE_PRIVATE);
+        DBCreated = sp.getBoolean("created", false);
 
+        bl = new BL(this);
 
+        initDB();
+    }
+
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean("created", DBCreated);
+        editor.commit();
     }
 
     public void new_user(View v)
@@ -54,5 +74,20 @@ public class MyActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void initDB()
+    {
+        Log.i("TAG","1");
+        if(!DBCreated) {
+            Log.i("TAG","2");
+            initTables intables = new initTables(this);
+            intables.initAllTables();
+            DBCreated = true;
+            SharedPreferences.Editor editor = sp.edit();
+            editor.putBoolean("created", DBCreated);
+            editor.commit();
+        }
+
     }
 }

@@ -110,7 +110,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberPassword"
                 android:ems="10"
                 android:textDirection="rtl"
                 android:id="@+id/IDEditText" />
