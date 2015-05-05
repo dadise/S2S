@@ -20,7 +20,7 @@ public class initTables
     {
         bl.addCorseToDB("אלגוריתמיקה",123,"תוכנה");
         bl.addCorseToDB("פיסיקה",6577,"אלקטרוניקה");
-        bl.addCorseToDB("חדואת",9876,"תוכנה");
+        bl.addCorseToDB("חדוא",9876,"תוכנה");
 
     }
 }

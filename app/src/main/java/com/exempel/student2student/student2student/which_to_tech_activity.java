@@ -26,6 +26,7 @@ public class which_to_tech_activity extends Activity
     private ListView teachList;
     private BL bl;
     private Cursor c;
+    dalServer ds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,16 @@ public class which_to_tech_activity extends Activity
 
         teachList = (ListView) findViewById(R.id.teachListView);
         bl = new BL(this);
-        c = (Cursor) bl.readCourseTable();
         List<String> courseList = bl.readCourseTable();
+        ds = new dalServer(this,this,getTaskId());
+        ds.execute();
+        int i = 0;
+        while(!courseList.isEmpty())
+        {
+            Log.i("WHAT","here");
+            Log.i("TAG",courseList.get(i));
+            i++;
+        }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,courseList);
         teachList.setAdapter(adapter);
