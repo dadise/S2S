@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\דדי\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.35\b6ac941b7288376a7e8bc6490264bbd4427fb94e\mysql-connector-java-5.1.35.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b6ac941b7288376a7e8bc6490264bbd4427fb94e">
+        <dex dex="C:\Users\דדי\AndroidStudioProjects\Student2Student\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.1.35-ceb352f75c1aaf83f8687d1b9a1140c7f33a9576.jar" />
+    </item>
+
+</items>

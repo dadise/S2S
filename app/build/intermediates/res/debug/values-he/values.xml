@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values-he/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Student2Student</string>
+    <string name="chose_courses">בחר את הקורסים שאותם תוכל ללמד</string>
+</resources>

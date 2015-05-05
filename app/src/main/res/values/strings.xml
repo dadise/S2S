@@ -40,5 +40,8 @@
     <string name="title_activity_create_new_user">create_new_user</string>
     <string name="title_activity_which_to_teach">which_to_teach</string>
     <string name="title_activity_line">line</string>
+    <string name="course_number_title"> מספר הקורס </string>
+    <string name="course_name_title"> שם הקורס </string>
+    <string name="check"> סמן </string>
 
 </resources>

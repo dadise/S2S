@@ -22,6 +22,28 @@ public class BL
         dal = new DBDal(con);
     }
 
+    public Cursor s()
+    {
+        return dal.readCourseTable();
+    }
+
+    public List<String> readCourseTable()
+    {
+        List<String> courseList = new ArrayList<>();
+        Cursor cursor = dal.readCourseTable();
+        cursor.moveToFirst();
+
+        while(!cursor.isAfterLast())
+        {
+            String s = cursor.getString(0)+" "+cursor.getString(1);
+            courseList.add(s);
+            cursor.moveToNext();
+            Log.i("TAG",s);
+        }
+        cursor.close();
+        return courseList;
+    }
+
     public List<String> readFromStudentDB()
     {
         List<String> studentsList = new ArrayList<>();
@@ -57,23 +79,6 @@ public class BL
     public void addCorseToDB(String courseName , int courseNumber , String occupation)
     {
         dal.addCorseToDB(courseName, courseNumber, occupation);
-    }
-
-    public List<String> readCourseTable()
-    {
-        List<String> courseList = new ArrayList<>();
-        Cursor cursor = dal.readCourseTable();
-        cursor.moveToFirst();
-
-        while(!cursor.isAfterLast())
-        {
-            String s = cursor.getString(0)+" "+cursor.getString(1);
-            courseList.add(s);
-            cursor.moveToNext();
-            Log.i("TAG",s);
-        }
-        cursor.close();
-        return courseList;
     }
 
     public void addStudentToDB(String first,String last,String user,int id,String mail,String occ)

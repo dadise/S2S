@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/strings.xml -->
-    <eat-comment />
-
+    <eat-comment/>
     <string-array name="line_of_business_list">
         <item> הנדסת תוכנה </item>
         <item> הנדסה פרמצבטית </item>
@@ -16,44 +14,50 @@
         <item> מכינות קדם אקדמיות </item>
     </string-array>
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/colors.xml.xml -->
-    <eat-comment />
-
+    <eat-comment/>
     <color name="Maroon">#800000</color>
     <color name="black">#000000</color>
     <color name="darkGray">#A9A9A9</color>
     <color name="red">#CC0000</color>
     <color name="white">#FFFFFF</color>
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/dimens.xml -->
-    <eat-comment />
-
+    <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/strings.xml -->
-    <eat-comment />
-
+    <eat-comment/>
     <string name="action_settings">Settings</string>
-    <string name="app_name">Student2Student</string>
-    <string name="chose_courses"> בחר קורסים שתצליח ללמד  </string>
+    <string name="app_name" translatable="false">Student2Student</string>
+    <string name="back"> חזור </string>
+    <string name="check"> סמן </string>
+    <string name="chose_courses"> בחר את הקורסים אותם תרצה ללמד </string>
     <string name="collage"> מכללה </string>
+    <string name="cont"> המשך </string>
+    <string name="course_name_title"> שם הקורס </string>
+    <string name="course_number_title"> מספר הקורס </string>
     <string name="courses"> קורסים </string>
     <string name="e_mail"> אימייל </string>
     <string name="exsist_user">משתמש קיים</string>
+    <string name="hello_world">Hello world!</string>
     <string name="new_last_name"> שם משפחה </string>
     <string name="new_name"> שם פרטי </string>
     <string name="new_user">משתמש חדש</string>
     <string name="policy"> תקנון </string>
-    <string name="teach">  האם את\ה רוצה להיות מורה </string>
+    <string name="teach"> האם אתה רוצה להיות מורה </string>
     <string name="title_activity_courses_page">courses_page</string>
+    <string name="title_activity_create_new_user">create_new_user</string>
     <string name="title_activity_exist_student">exist_student</string>
+    <string name="title_activity_line">line</string>
     <string name="title_activity_new_user_activity">new_user_activity</string>
     <string name="title_activity_policy">policy</string>
+    <string name="title_activity_which_to_learn_activity">which_to_learn_activity</string>
+    <string name="title_activity_which_to_teach">which_to_teach</string>
+    <string name="title_activity_which_to_tech_activity">which_to_tech_activity</string>
     <string name="user_ID"> תעודת זהות </string>
     <string name="user_name"> שם משתמש </string>
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/styles.xml -->
-    <eat-comment />
-
+    <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-
 </resources>
