@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="הכנס שם משתמש"
-                android:ems="8"
+                android:ems="9"
                 android:id="@+id/nameEditText" />
 
             <TextView
@@ -52,7 +52,9 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/user_name"
-                android:id="@+id/userNameTextViewextView"
+                android:textSize="18dp"
+                android:paddingTop="9dp"
+                android:id="@+id/userNameTextView"
                 android:textColor="@color/Maroon"/>
 
         </LinearLayout>
@@ -65,20 +67,34 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberPassword"
                 android:hint="הכנס תעודת זהות"
-                android:ems="8"
-                android:id="@+id/lastEditText" />
+                android:ems="9"
+                android:id="@+id/idEditText" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/user_ID"
-                android:id="@+id/IDTextView"
-                android:textColor="@color/Maroon"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imagePassword"
+                android:src="@drawable/password"
+                android:layout_alignParentEnd="true"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="@string/user_ID"-->
+                <!--android:id="@+id/IDTextView"-->
+                <!--android:textColor="@color/Maroon"/>-->
 
         </LinearLayout>
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/update_details"
+            android:id="@+id/update_checkBox"
+            android:layout_marginTop="100dp"/>
+
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

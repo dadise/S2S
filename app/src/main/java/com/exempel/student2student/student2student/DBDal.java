@@ -84,20 +84,32 @@ public class DBDal
 
         String str = "";
         String [] columns = {DBColumns.COURSE_NUMBER,DBColumns.COURSE_NAME};
-        Cursor c = dbr.query(DBColumns.COURSES_TABLE_NAME,columns,null,null,null,null,null,null);
+        Cursor c = dbr.query(DBColumns.COURSES_TABLE_NAME, columns, null, null, null, null, null, null);
+        Log.i("TAG"," dsfdsf "+c.getCount());
         if(c != null)
         {
             c.moveToFirst();
         }
         dbr.close();
-
         return c;
+    }
+
+
+    public boolean checkIfUserNameAndIDExist(String username, String id)
+    {
+        SQLiteDatabase dbr = db.getReadableDatabase();
+        Cursor cursor = dbr.rawQuery("select "+ DBColumns.ID+ " from "+DBColumns.STUDENTS_TABLE_NAME + " where "+DBColumns.USER_NAME + " = ? and "+DBColumns.ID + " = ? ",new String[]{username,id});
+        Log.i("it's ok", cursor.getColumnName(0));
+        if(cursor.getCount() == 0)
+            return false;
+        return true;
     }
 
     public boolean checkIfUserExist( String id)
     {
         SQLiteDatabase dbr = db.getReadableDatabase();
-        Cursor cursor = dbr.rawQuery("select "+ DBColumns.ID +" from "+DBColumns.STUDENTS_TABLE_NAME+" where "+ DBColumns.ID +" = ?", new String[] { id });
+        Log.i("error","error");
+        Cursor cursor = dbr.rawQuery("select " + DBColumns.ID + " from " + DBColumns.STUDENTS_TABLE_NAME + " where " + DBColumns.ID + " = ?", new String[]{id});
         if(cursor.getCount()==0)
             return false;
         return true;
@@ -120,4 +132,85 @@ public class DBDal
 
     }
 
+    public String getFirstNameByID(String id)
+    {
+        String tmp = "";
+        SQLiteDatabase dbr = db.getReadableDatabase();
+
+        Cursor cursor = dbr.rawQuery("select " + DBColumns.FIRST_NAME + " from " + DBColumns.STUDENTS_TABLE_NAME + " where " + DBColumns.ID + " = ?", new String[]{id});
+        if(!cursor.moveToFirst())
+        {
+            tmp = "wrong id!!";
+            System.exit(1);
+        }
+        else
+        {
+            Log.i("FirstName",cursor.getString(cursor.getColumnIndex(DBColumns.FIRST_NAME )));
+            tmp = cursor.getString(cursor.getColumnIndex(DBColumns.FIRST_NAME));
+        }
+        return tmp;
+    }
+
+    public String getLastNameByID(String id)
+    {
+        String tmp = "";
+        SQLiteDatabase dbr = db.getReadableDatabase();
+
+        Cursor cursor = dbr.rawQuery("select " + DBColumns.LAST_NAME + " from " + DBColumns.STUDENTS_TABLE_NAME + " where " + DBColumns.ID + " = ?", new String[]{id});
+        if(!cursor.moveToFirst())
+        {
+            tmp = "wrong id!!";
+            System.exit(1);
+        }
+        else
+        {
+            Log.i("LastName",cursor.getString(cursor.getColumnIndex(DBColumns.LAST_NAME )));
+            tmp = cursor.getString(cursor.getColumnIndex(DBColumns.LAST_NAME));
+        }
+        return tmp;
+    }
+
+    public String getEmaleByID(String id)
+    {
+        String tmp = "";
+        SQLiteDatabase dbr = db.getReadableDatabase();
+
+        Cursor cursor = dbr.rawQuery("select " + DBColumns.E_MAIL+ " from " + DBColumns.STUDENTS_TABLE_NAME + " where " + DBColumns.ID + " = ?", new String[]{id});
+        if(!cursor.moveToFirst())
+        {
+            tmp = "wrong id!!";
+            System.exit(1);
+        }
+        else
+        {
+            Log.i("email",cursor.getString(cursor.getColumnIndex(DBColumns.E_MAIL )));
+            tmp = cursor.getString(cursor.getColumnIndex(DBColumns.E_MAIL));
+        }
+        return tmp;
+    }
+
+    public String getOccupationNameByID(String id)
+    {
+        String tmp = "";
+        SQLiteDatabase dbr = db.getReadableDatabase();
+
+        Cursor cursor = dbr.rawQuery("select " + DBColumns.LINE_OF_BUSINESS+ " from " + DBColumns.STUDENTS_TABLE_NAME + " where " + DBColumns.ID + " = ?", new String[]{id});
+        if(!cursor.moveToFirst())
+        {
+            tmp = "wrong id!!";
+            System.exit(1);
+        }
+        else
+        {
+            Log.i("lineOfBusiness",cursor.getString(cursor.getColumnIndex(DBColumns.LINE_OF_BUSINESS )));
+            tmp = cursor.getString(cursor.getColumnIndex(DBColumns.LINE_OF_BUSINESS));
+        }
+        return tmp;
+    }
+
+    public void updateStudentDetails(String first, String last, String user, String id, String email, Boolean teach)
+    {
+            
+    }
 }
+

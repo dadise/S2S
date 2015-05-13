@@ -14,6 +14,7 @@ public class MyActivity extends Activity {
 
     private SharedPreferences sp;
     private Boolean DBCreated;
+    private Boolean update;
     private BL bl;
 
 //    DBColumns db;
@@ -25,7 +26,7 @@ public class MyActivity extends Activity {
 
         sp = getPreferences(MODE_PRIVATE);
         DBCreated = sp.getBoolean("created", false);
-
+//        update = sp.getBoolean("update" , false);
         bl = new BL(this);
 
         initDB();
@@ -42,6 +43,7 @@ public class MyActivity extends Activity {
 
     public void new_user(View v)
     {
+
         Intent intent = new Intent(this,new_user_activity.class);
         startActivity(intent);
     }

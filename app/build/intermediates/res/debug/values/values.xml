@@ -50,9 +50,11 @@
     <string name="title_activity_line">line</string>
     <string name="title_activity_new_user_activity">new_user_activity</string>
     <string name="title_activity_policy">policy</string>
+    <string name="title_activity_update_details">updateDetails</string>
     <string name="title_activity_which_to_learn_activity">which_to_learn_activity</string>
     <string name="title_activity_which_to_teach">which_to_teach</string>
     <string name="title_activity_which_to_tech_activity">which_to_tech_activity</string>
+    <string name="update_details"> אני רוצה לעדכן את הפרטים שלי </string>
     <string name="user_ID"> תעודת זהות </string>
     <string name="user_name"> שם משתמש </string>
     <!-- From: file:/C:/Users/דדי/AndroidStudioProjects/Student2Student/app/src/main/res/values/styles.xml -->

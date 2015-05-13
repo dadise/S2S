@@ -22,9 +22,21 @@ public class BL
         dal = new DBDal(con);
     }
 
-    public Cursor s()
+    public List<String> student()
     {
-        return dal.readCourseTable();
+        List<String> studentList = new ArrayList<>();
+        Cursor cursor = dal.readFromStudentDB();
+        cursor.moveToFirst();
+
+        while(!cursor.isAfterLast())
+        {
+            String s = cursor.getString(0)+" "+cursor.getString(1)+" "+cursor.getString(2)+" "+cursor.getString(3)+" "+cursor.getString(4);
+            studentList.add(s);
+            cursor.moveToNext();
+            Log.i("student",s);
+        }
+        cursor.close();
+        return studentList;
     }
 
     public List<String> readCourseTable()
@@ -33,6 +45,7 @@ public class BL
         Cursor cursor = dal.readCourseTable();
         cursor.moveToFirst();
 
+//        Log.i("TAG","corsur not empty "+cursor.getString(0));
         while(!cursor.isAfterLast())
         {
             String s = cursor.getString(0)+" "+cursor.getString(1);
@@ -86,8 +99,35 @@ public class BL
         dal.addStudentToDB(first, last, user, id, mail, occ);
     }
 
+    public String getFirstNameByID(String id)
+    {
+       return dal.getFirstNameByID(id);
+    }
+
+    public String getLastNameByID(String id)
+    {
+       return dal.getLastNameByID(id);
+    }
+    public String getEmaleByID(String id)
+    {
+        return dal.getEmaleByID(id);
+    }
+    public String getOccupationNameByID(String id)
+    {
+        return dal.getOccupationNameByID(id);
+    }
+
     public boolean checkIfUserNameExist( String id)
     {
        return dal.checkIfUserExist(id);
+    }
+    public boolean checkIfUserNameAndIDExist(String username,String id)
+    {
+        return dal.checkIfUserNameAndIDExist(username, id);
+    }
+
+    public void updateStudentDetails(String first , String last , String user , String id , String email, Boolean teach)
+    {
+        dal.updateStudentDetails(first,last,user,id,email,teach);
     }
 }

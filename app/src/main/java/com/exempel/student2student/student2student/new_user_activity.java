@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -28,6 +29,17 @@ public class new_user_activity extends Activity {
     private EditText e_mail;
     private Spinner occupation;
     private CheckBox teach;
+    private TextView first;
+    private TextView last;
+    private TextView user;
+    private TextView email;
+    private TextView id;
+    private CheckBox teachBox;
+    private TextView occ;
+
+
+    private SharedPreferences sp;
+    private boolean update;
 
     private BL bl;
 
@@ -37,6 +49,13 @@ public class new_user_activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_user_activity);
 
+        sp = getSharedPreferences("myData", Context.MODE_PRIVATE);
+        update = sp.getBoolean("update", false);
+        String s = String.valueOf(update);
+        Log.i("update",s +"   kjaskdajsdkasd");
+//        sp = getPreferences(MODE_PRIVATE);
+//        update = sp.getBoolean("update", update);
+
         firstName = (EditText) findViewById(R.id.nameEditText);
         lastName = (EditText) findViewById(R.id.lastEditText);
         userName = (EditText) findViewById(R.id.userNameEdText);
@@ -45,6 +64,19 @@ public class new_user_activity extends Activity {
         occupation = (Spinner) findViewById(R.id.line_of_business_spinner);
         teach = (CheckBox) findViewById(R.id.teachBox);
 
+        if(update)
+        {
+
+            Toast.makeText(this,"update",Toast.LENGTH_LONG).show();
+            firstName.setText(sp.getString("firstName", " "));
+            lastName.setText(sp.getString("lastName" ," "));
+            userName.setText(sp.getString("userName", " "));
+            ID.setText(sp.getString("ID", " "));
+            e_mail.setText(sp.getString("email", " "));
+
+
+//            teachBox.setChecked();
+        }
         bl = new BL(this);
     }
 
@@ -57,19 +89,25 @@ public class new_user_activity extends Activity {
         editor.putString("lastName",lastName.getText().toString());
         editor.putString("userName",userName.getText().toString());
         editor.putString("ID",ID.getText().toString());
-        editor.putString("email",e_mail.getText().toString());
-        editor.putString("occupation",occupation.toString());
+        editor.putString("email", e_mail.getText().toString());
+        editor.putString("occupation", occupation.toString());
+//        editor.putBoolean("update", false);
+
 //        editor.putBoolean("isTeach",false);
         editor.commit();
-        if(bl.checkIfUserNameExist(ID.getText().toString()))
+
+
+        if(bl.checkIfUserNameExist(ID.getText().toString()) && !update)
         {
-             Toast.makeText(this,"user allready exist in the system!",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"user allready exist in the system!",Toast.LENGTH_LONG).show();
         }
         else
         {
             if (teach.isChecked())
             {
                 editor.putBoolean("techCheck",true);
+                editor.putBoolean("update",false);
+
                 editor.commit();
 //
                 bl.addStudentToDB(firstName.getText().toString(), lastName.getText().toString(), userName.getText().toString(), Integer.parseInt(ID.getText().toString()), e_mail.getText().toString(), occupation.getSelectedItem().toString());

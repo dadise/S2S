@@ -1,0 +1,2 @@
+C:\Users\דדי\AndroidStudioProjects\Student2Student\app\build\intermediates\classes\debug
+C:\Users\דדי\AndroidStudioProjects\Student2Student\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.1.35-ceb352f75c1aaf83f8687d1b9a1140c7f33a9576.jar

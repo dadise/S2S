@@ -43,5 +43,7 @@
     <string name="course_number_title"> מספר הקורס </string>
     <string name="course_name_title"> שם הקורס </string>
     <string name="check"> סמן </string>
+    <string name="update_details"> אני רוצה לעדכן את הפרטים שלי </string>
+    <string name="title_activity_update_details">updateDetails</string>
 
 </resources>
